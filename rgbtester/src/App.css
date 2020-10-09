@@ -1,0 +1,57 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-slider {
+  display: flex;
+  margin-top: 5px;
+}
+
+.input-value{
+  text-align: center;
+  width: inherit;
+  background-color: black;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+}
+
+.blue{
+  color: blue;
+}
+
+.rgb-value{
+  margin-left: 20px;
+  line-height: 20px;
+  width: 26px;
+}
+
+.color-formed {
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #fff;
+  align-self: center;
+}
+
+#red {
+  background-color: aqua;
+  color: blueviolet;
+}
