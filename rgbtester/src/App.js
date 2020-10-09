@@ -14,28 +14,33 @@ function App() {
         <label className="red" for="red">Red</label>
         <div className="color-slider">
           <input type="range" id="red" min="0" max="255" value={red} onChange={e => {
-            document.getElementById("xia").value=red;
-            setRed(e.target.value)}}>
-
+              document.getElementById("input-value-red").value=red;
+              setRed(e.target.value)}}>
           </input>
           <div className="rgb-value">
-            <input id="xia" type="text" className="red input-value" onTouchCancel={e => setRed(e.target.value)}/>
+              <input id="input-value-red" type="text" className="red input-value" onChange={e => setRed(e.target.value)}/>
           </div>
         </div>
 
         <label className="green" for="green">Green</label>
         <div className="color-slider">
-          <input type="range" id="green" min="0" max="255" value={green} onChange={e => setGreen(e.target.value)}></input>
+          <input type="range" id="green" min="0" max="255" value={green} onChange={e => {
+              document.getElementById("input-value-green").value=green;
+              setGreen(e.target.value)}}> 
+          </input>
           <div className="rgb-value">
-            <input type="text" className="green input-value" value={green} />
+              <input id="input-value-green" type="text" className="green input-value" onChange={e => setGreen(e.target.value)}/>
           </div>
         </div>
 
         <label className="blue" for="blue">Blue</label>
         <div className="color-slider">
-          <input type="range" id="blue" min="0" max="255" value={blue} onChange={e => setBlue(e.target.value)}></input>
+          <input type="range" id="blue" min="0" max="255" value={blue} onChange={e => {
+              document.getElementById("input-value-blue").value=blue;
+              setBlue(e.target.value)}}>
+          </input>
           <div className="rgb-value">
-            <input type="text" className="blue input-value" value={blue} />
+              <input id="input-value-blue" type="text" className="blue input-value" onChange={e => setBlue(e.target.value)}/>
           </div>
         </div>
 
